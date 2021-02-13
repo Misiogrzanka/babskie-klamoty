@@ -15,12 +15,13 @@ html {
 }
 
 body {
-	background-color: var(--color-secondary);
+	background-color: #fff;
 	// background-image: url();
 
 	&::after {
 		content: '';
-		background: url(../img/background-cardboard-1.jpg);
+		// background: url(../img/background-cardboard-1.jpg);
+		background-color: #fff;
 		opacity: 0.3;
 		top: 0;
 		left: 0;
@@ -29,8 +30,8 @@ body {
 		position: absolute;
 		z-index: -1;
 
-		background-size: cover;
-		background-repeat: no-repeat;
+		// background-size: cover;
+		// background-repeat: no-repeat;
 	}
 }
 
