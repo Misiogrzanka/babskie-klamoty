@@ -1,16 +1,18 @@
 .header {
 	width: 100vw;
-	height: 15vh;
+	height: 20%;
 	padding: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #fff;
+	border-bottom: solid 1rem #fff;
 
 	&__logo {
-        height: 3.75rem;
+		margin-left: 2rem;
+        height: 10rem;
         display: flex;
 		flex: 1;
+		border-radius: 50px;
 	}
 
 	&__search {
