@@ -12,11 +12,9 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/main.scss -o src/index.css",
     "build-js": "react-scripts build",
-    "watch-css": "npm run build-css && node-sass-chokidar src/main.scss -o src/index.css --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "devserver": "live-server src/App.js",
+    "start": "react-scripts start",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,0 +1,64 @@
+.header {
+	width: 100vw;
+	height: 15vh;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+
+	&__logo {
+        height: 3.75rem;
+        display: flex;
+		flex: 1;
+	}
+
+	&__search {
+		flex: 0 0 70%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__search-input {
+        background-color: var(--color-grey-light-1);
+        border: none;
+        padding: 0.7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        height: 3.75rem;
+        transition: all 0.2s;
+        margin-right: -4rem;
+    
+
+		&:focus {
+			outline: none;
+			width: 100%;
+			background-color: var(--color-grey-light-3);
+		}
+	}
+
+	&__button {
+		width: 2rem;
+        height: 2rem;
+		background-color: peru;
+		border: none;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			background-color: green;
+		}
+
+        &:active {
+			transform: translateY(2px);
+		}
+	}
+
+	&__search-icon {
+		// to be developed?
+	}
+}
