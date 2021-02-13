@@ -14,9 +14,9 @@ export const Header = () => {
 						placeholder='Wyszukaj przedmiot'
 					/>
 					<button class='header__button'>
-						{/* <svg class='header__search-icon'>
+						<svg class='header__search-icon'>
 							<use xlinkHref='../../../img/sprite.svg#icon-magnifying-glass'></use>
-						</svg> */}
+						</svg>
 					</button>
 				</form>
 			</div>

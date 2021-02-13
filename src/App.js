@@ -2,17 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { Footer, Header, Sidenav } from '../src/Components/Static/Layout';
-// import Header from "../src/Components/Static/Layout/Header"
+import Layout from '../src/Components/Static/Layout.js'
 
 import './sass/App.scss';
 
 function App() {
 	return (
-		<div className='App'>
-			<Header />
-      <Sidenav />
-      <Footer />
-		</div>
+		<Layout />
 	);
 }
 
