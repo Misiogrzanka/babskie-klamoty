@@ -1,9 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; //10px = 1rem;
 }
 
 body {
-    background-color: var(--color-primary);
+	background-color: #fff;
+	// background-image: url();
+
+	&::after {
+		content: '';
+		// background: url(../img/background-cardboard-1.jpg);
+		background-color: #fff;
+		opacity: 0.3;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;
+
+		// background-size: cover;
+		// background-repeat: no-repeat;
+	}
 }
+
+
