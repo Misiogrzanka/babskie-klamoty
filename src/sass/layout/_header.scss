@@ -2,30 +2,70 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 10rem;
+    align-items: center;
 
     &__brand-container {
-        height: 5rem;
-        background-color: chocolate;
+        display: flex;
+        padding: 3rem;
+        margin-top: 1.7rem;
+        margin-bottom: 1.7rem;
+        width: 50%;
+        border-bottom: 1px solid #000;
     }
 
     &__branding {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
 
-    &__menu-container {
+        margin: 0 auto;
 
+        &-image {
+            width: 40rem;
+            height: auto
+        }
     }
 
     &__brand-search {
-        position: absolute;
-        top: 50%; 
-        right: 25%;
+        display: flex;
+        flex-direction: row;
     }
 
     &__brand-search-item {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 5rem;
+        background-color: aqua;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__navigation {
+        width: 50%;
+
+        &-container {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2rem;
+            border: 1px solid black;
+            font-size: 1.7rem;
+            font-weight: bold;
+
+            & > * {
+                list-style: none;
+                text-transform: uppercase;
+                color: var(--color-primary);
+                padding: 1rem;
+                transition: all .17s;
+
+                &:hover,
+                &:link,
+                &:visited {
+                    transform: translateY(-.4rem);
+                    color: var(--color-secondary-2);
+                }
+            }
+        }
         
     }
 }

@@ -1,25 +1,18 @@
 import React from 'react';
 
-import {SearchContainer} from "../Molecules"
+import {SearchContainer, Branding, MenuBar} from "../Molecules/header";
+
+
+
 
 export const Header = () => {
 	return (
 		<div class='header'>
 			<div class='header__brand-container'>
-				<div class="header__branding">
-					<div class="header__branding-image">IMAGE</div>
-				</div>
+				<Branding />
                 <SearchContainer />
 			</div>
-			<div class='header__menu-container'>
-                <ul>
-                    <li>ITEM</li>
-                    <li>ITEM</li>
-                    <li>ITEM</li>
-                    <li>ITEM</li>
-                    <li>ITEM</li>
-                </ul>
-            </div>
+				<MenuBar />
 		</div>
 	);
 };
