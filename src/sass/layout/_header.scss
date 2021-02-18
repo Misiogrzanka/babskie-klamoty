@@ -2,7 +2,6 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	height: 10rem;
 	align-items: center;
 
 	&__brand-container {
@@ -10,17 +9,17 @@
 		padding: 3rem;
 		margin-top: 1.7rem;
 		margin-bottom: 1.7rem;
-		width: 50%;
+		width: 66%;
 		border-bottom: 1px solid #000;
 	}
 
 	&__branding {
 		margin: 0 auto;
+	}
 
-		&-image {
-			width: 40rem;
-			height: auto;
-		}
+	&__branding-image {
+		width: 40rem;
+		height: auto;
 	}
 
 	&__brand-search {
@@ -40,49 +39,48 @@
 	}
 
 	&__navigation {
-		width: 50%;
+		width: 66%;
+	}
+	&__navigation-container {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 2rem;
+		border: 1px solid black;
+		font-size: 1.7rem;
+		font-weight: bold;
 
-		&-container {
-			display: flex;
-			justify-content: space-evenly;
-			padding: 2rem;
-			border: 1px solid black;
-			font-size: 1.7rem;
-			font-weight: bold;
+		& > * {
+			list-style: none;
+			text-transform: uppercase;
+			color: var(--color-primary);
+			padding: 1rem;
+			transition: all 0.27s;
 
-            //need to change when router is applied just for testing purposes
-			& > * { 
-				list-style: none;
-				text-transform: uppercase;
-                color: var(--color-primary); 
-				padding: 1rem;
-				transition: all 0.27s;
-
-				&:hover {
-					transform: translateY(-0.17rem);
-					color: var(--color-secondary-2);
-				}
+			&:hover {
+				transform: translateY(-0.17rem);
+				color: var(--color-secondary-2);
 			}
 		}
+	}
+	//need to change when router is applied just for testing purposes
 
-        //router approach final effect
-		&-item {
+	//router approach final effect
+	&__navigation-item {
+		text-decoration: none;
+		color: var(--color-primary);
+
+		&:hover {
+			transform: translateY(-0.4rem);
+			color: var(--color-secondary-2);
+		}
+
+		&:visited,
+		&:link {
 			text-decoration: none;
-			color: var(--color-primary); 
+		}
 
-            &:hover {
-                transform: translateY(-0.4rem);
-                color: var(--color-secondary-2);
-            }
-
-            &:visited,
-            &:link {
-                text-decoration: none;
-            }
-
-            &:active {
-                text-decoration: underline;
-            }
+		&:active {
+			text-decoration: underline;
 		}
 	}
 }
