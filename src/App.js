@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 
 import './sass/App.scss';
 
-import {Header} from "./Components/Organisms"
+import {HeaderTemplate} from "./Components/Templates"
 
 function App() {
 	return (
 		<div class="App">
-		<Header />
+		<HeaderTemplate />
 		</div>
 	);
 }

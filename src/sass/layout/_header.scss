@@ -1,72 +1,88 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 10rem;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 10rem;
+	align-items: center;
 
-    &__brand-container {
-        display: flex;
-        padding: 3rem;
-        margin-top: 1.7rem;
-        margin-bottom: 1.7rem;
-        width: 50%;
-        border-bottom: 1px solid #000;
-    }
+	&__brand-container {
+		display: flex;
+		padding: 3rem;
+		margin-top: 1.7rem;
+		margin-bottom: 1.7rem;
+		width: 50%;
+		border-bottom: 1px solid #000;
+	}
 
-    &__branding {
+	&__branding {
+		margin: 0 auto;
 
-        margin: 0 auto;
+		&-image {
+			width: 40rem;
+			height: auto;
+		}
+	}
 
-        &-image {
-            width: 40rem;
-            height: auto
-        }
-    }
+	&__brand-search {
+		display: flex;
+		flex-direction: row;
+	}
 
-    &__brand-search {
-        display: flex;
-        flex-direction: row;
-    }
+	&__brand-search-item {
+		width: 2rem;
+		height: 2rem;
+		margin-top: 5rem;
+		background-color: aqua;
 
-    &__brand-search-item {
-        width: 2rem;
-        height: 2rem;
-        margin-top: 5rem;
-        background-color: aqua;
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
 
-        &:not(:last-child) {
-            margin-right: 1rem;
-        }
-    }
+	&__navigation {
+		width: 50%;
 
-    &__navigation {
-        width: 50%;
+		&-container {
+			display: flex;
+			justify-content: space-evenly;
+			padding: 2rem;
+			border: 1px solid black;
+			font-size: 1.7rem;
+			font-weight: bold;
 
-        &-container {
-            display: flex;
-            justify-content: space-evenly;
-            padding: 2rem;
-            border: 1px solid black;
-            font-size: 1.7rem;
-            font-weight: bold;
+            //need to change when router is applied just for testing purposes
+			& > * { 
+				list-style: none;
+				text-transform: uppercase;
+                color: var(--color-primary); 
+				padding: 1rem;
+				transition: all 0.27s;
 
-            & > * {
-                list-style: none;
-                text-transform: uppercase;
-                color: var(--color-primary);
-                padding: 1rem;
-                transition: all .17s;
+				&:hover {
+					transform: translateY(-0.17rem);
+					color: var(--color-secondary-2);
+				}
+			}
+		}
 
-                &:hover,
-                &:link,
-                &:visited {
-                    transform: translateY(-.4rem);
-                    color: var(--color-secondary-2);
-                }
+        //router approach final effect
+		&-item {
+			text-decoration: none;
+			color: var(--color-primary); 
+
+            &:hover {
+                transform: translateY(-0.4rem);
+                color: var(--color-secondary-2);
             }
-        }
-        
-    }
-}
 
+            &:visited,
+            &:link {
+                text-decoration: none;
+            }
+
+            &:active {
+                text-decoration: underline;
+            }
+		}
+	}
+}
