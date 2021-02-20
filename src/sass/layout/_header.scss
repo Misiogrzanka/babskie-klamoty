@@ -46,21 +46,20 @@
 		display: flex;
 		justify-content: space-evenly;
 		padding: 2rem;
-		border: 1px solid black;
-		font-size: 1.7rem;
+		// border: 1px solid black;
+		font-size: 1.9rem;
 		font-weight: 700;
 
 		& > * {
 			list-style: none;
 			text-transform: none;
-			color: var(--color-primary);
 			padding: 1rem;
-			transition: all 0.27s;
+			transition: all .24s;
 
 			&:hover {
-				transform: translateY(-0.17rem);
-				color: var(--color-secondary-2);
+				transform: translateY(-.3rem);
 			}
+			
 		}
 	}
 	//need to change when router is applied just for testing purposes
@@ -71,8 +70,7 @@
 		color: var(--color-primary);
 
 		&:hover {
-			transform: translateY(-0.4rem);
-			color: var(--color-secondary-2);
+			color: var(--color-tertiary);
 		}
 
 		&:visited,
