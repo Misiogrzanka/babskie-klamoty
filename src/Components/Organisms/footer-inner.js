@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import {FooterSocial, FooterCopyright} from "../Atoms/footer";
+import { FooterSocial, FooterCopyright} from '../Atoms/footer';
 
 export const FooterInner = () => {
-    return(
-        <div class="footer__inner">
-            <FooterCopyright />
-            <FooterSocial />
-        </div>
-    )
-}
+	return (
+		<div class='footer__inner'>
+			<FooterCopyright />
+			<FooterSocial />
+		</div>
+	);
+};
