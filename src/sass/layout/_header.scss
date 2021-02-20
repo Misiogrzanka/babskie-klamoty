@@ -10,7 +10,7 @@
 		margin-top: 1.7rem;
 		margin-bottom: 1.7rem;
 		width: 66%;
-		border-bottom: 1px solid #000;
+		border-bottom: .6rem solid var(--color-tertiary);
 	}
 
 	&__branding {
@@ -18,7 +18,7 @@
 	}
 
 	&__branding-image {
-		width: 40rem;
+		width: 60rem;
 		height: auto;
 	}
 
@@ -41,17 +41,18 @@
 	&__navigation {
 		width: 66%;
 	}
+
 	&__navigation-container {
 		display: flex;
 		justify-content: space-evenly;
 		padding: 2rem;
 		border: 1px solid black;
 		font-size: 1.7rem;
-		font-weight: bold;
+		font-weight: 700;
 
 		& > * {
 			list-style: none;
-			text-transform: uppercase;
+			text-transform: none;
 			color: var(--color-primary);
 			padding: 1rem;
 			transition: all 0.27s;

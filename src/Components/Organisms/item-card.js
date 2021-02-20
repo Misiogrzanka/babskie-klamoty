@@ -9,6 +9,10 @@ export const ItemCard = () => {
 		<div class='main__card'>
 			<ItemImg />
 			<ItemInfo />
+			<div class="main__card-popup">
+			<div class="main__card-popup-1"></div>
+			<div class="main__card-popup-2"></div>
+			</div>
 		</div>
 	);
 };
