@@ -1,40 +1,74 @@
 .main {
-    width: 66%;
-    background-color: var(--color-secondary-3);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 5rem;
-    justify-content: space-evenly;
-    
-    &__card {
-        width: 30rem;
-        padding: 4rem;
-    }
+	width: 66%;
+	// background-color: var(--color-secondary-3);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 5rem;
+	justify-content: space-evenly;
 
-    &__card-image {
-        width: 100%;
-        height: 20rem;
+	&__card {
+		width: 30rem;
+		padding: 2rem;
+		margin: 0 5rem;
+		position: relative;
 
-        &:hover {
-            // Requires further investigation on how to apply on hover img change
-        }
-    }
+		&:hover &-popup-1 {
+			transform: translateX(-6rem);
+			opacity: 1;
+		}
 
-    &__card-info {
-        margin-top: 2rem;
-        width: 100%;
-        border: solid 1px black;
-        padding: 3rem;
-    }
+		&:hover &-popup-2 {
+			transform: translateX(-6rem);
+			opacity: 1;
+		}
 
-    &__card-info-name {
-        border: solid 1px black;
-        margin-bottom: 2rem;
-    }
+		&-popup-1 {
+			position: absolute;
+			right: 0;
+			top: 43%;
+			width: 2rem;
+			height: 2rem;
+			background-color: #fff;
+			opacity: 0;
+			transition: all 0.3s;
+		}
 
-    &__card-info-price {
-        border: solid 1px black;
-    }
+		&-popup-2 {
+			width: 2rem;
+			height: 2rem;
+			position: absolute;
+			right: 0;
+			bottom: 43%;
+			background-color: #fff;
+			opacity: 0;
+			transition: all 0.3s;
+		}
+	}
+
+	&__card-image {
+		width: 100%;
+		height: 30rem;
+
+		&:hover {
+			// Requires further investigation on how to apply on hover img change
+		}
+	}
+
+	&__card-info {
+		margin-top: 2rem;
+		width: 100%;
+		border: solid 1px black;
+		padding: 3rem;
+	}
+
+	&__card-info-name {
+		border: solid 1px black;
+		margin-bottom: 2rem;
+	}
+
+	&__card-info-price {
+		border: solid 1px black;
+	}
 }

@@ -10,7 +10,7 @@
 		margin-top: 1.7rem;
 		margin-bottom: 1.7rem;
 		width: 66%;
-		border-bottom: 1px solid #000;
+		border-bottom: 0.6rem solid var(--color-tertiary);
 	}
 
 	&__branding {
@@ -18,7 +18,7 @@
 	}
 
 	&__branding-image {
-		width: 40rem;
+		width: 60rem;
 		height: auto;
 	}
 
@@ -41,24 +41,23 @@
 	&__navigation {
 		width: 66%;
 	}
+
 	&__navigation-container {
 		display: flex;
 		justify-content: space-evenly;
 		padding: 2rem;
-		border: 1px solid black;
-		font-size: 1.7rem;
-		font-weight: bold;
+		// border: 1px solid black;
+		font-size: 1.9rem;
+		font-weight: 700;
 
 		& > * {
 			list-style: none;
-			text-transform: uppercase;
-			color: var(--color-primary);
+			text-transform: none;
 			padding: 1rem;
-			transition: all 0.27s;
+			transition: all 0.24s;
 
 			&:hover {
-				transform: translateY(-0.17rem);
-				color: var(--color-secondary-2);
+				transform: translateY(-0.3rem);
 			}
 		}
 	}
@@ -70,8 +69,7 @@
 		color: var(--color-primary);
 
 		&:hover {
-			transform: translateY(-0.4rem);
-			color: var(--color-secondary-2);
+			color: var(--color-tertiary);
 		}
 
 		&:visited,

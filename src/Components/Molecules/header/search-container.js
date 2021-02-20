@@ -6,6 +6,7 @@ export const SearchContainer = () => {
 			<button class='header__brand-search-item'></button>
 			<button class='header__brand-search-item'></button>
 			<button class='header__brand-search-item'></button>
+			<button class='header__brand-search-item'></button>
 		</div>
 	);
 };
