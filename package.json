@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build-js": "react-scripts build",
+    "build-css": "!-- Need to create script --!",
     "devserver": "live-server src/App.js",
     "start": "react-scripts start",
     "build": "npm-run-all build-css build-js",
