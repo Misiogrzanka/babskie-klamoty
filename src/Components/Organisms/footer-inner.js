@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FooterSocial, FooterCopyright} from '../Atoms/footer';
+import { FooterSocial, FooterCopyright } from '../Atoms/footer';
 
 export const FooterInner = () => {
 	return (
