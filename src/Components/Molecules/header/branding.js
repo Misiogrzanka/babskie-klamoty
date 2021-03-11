@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {BrandImg} from "../../Atoms/header"
+import { BrandImg } from '../../Atoms/header';
 
 export const Branding = () => {
 	return (

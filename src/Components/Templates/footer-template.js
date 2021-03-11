@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-import {FooterInner} from "../Organisms"
-import {FooterLine} from "../Atoms/footer"
+import { FooterInner } from '../Organisms';
+import { FooterLine } from '../Atoms/footer';
 
 export const FooterTemplate = () => {
-    return(
-        <div class="footer">
+	return (
+		<div class='footer'>
 			<FooterLine />
-            <FooterInner />
-        </div>
-    )
-}
+			<FooterInner />
+		</div>
+	);
+};
