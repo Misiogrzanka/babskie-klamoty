@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export const ItemPrice = () => {
-    return(
-        <div class="main__card-info-price"></div>
-    )
-}
+	return <div class='main__card-info-price'>This will be the item price</div>;
+};

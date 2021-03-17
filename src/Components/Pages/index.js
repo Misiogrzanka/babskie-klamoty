@@ -1,6 +1,6 @@
-export { AboutPage } from './home';
-export { ClothesPages } from './home';
-export { ContactPage } from './home';
-export { NewsPage } from './home';
-export { SalePage } from './home';
+export { AboutPage } from './about';
+export { ClothesPage } from './clothes';
+export { ContactPage } from './contact';
+export { NewsPage } from './news';
+export { SalePage } from './sale';
 export { HomePage } from './home';

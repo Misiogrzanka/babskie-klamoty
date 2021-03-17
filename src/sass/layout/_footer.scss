@@ -1,16 +1,16 @@
 .footer {
-        margin-top: 5rem;
+	margin-top: 5rem;
 	height: 30rem;
 	background-color: var(--color-tertiary);
 	position: relative;
 
 	&__line {
-                position: absolute;
-                top: 10%;
+		position: absolute;
+		top: 10%;
 		width: 100vw;
-                height: .5rem;
-                background-color: #000;
-                opacity: .3;
+		height: 0.5rem;
+		background-color: #000;
+		opacity: 0.3;
 	}
 
 	&__inner {
@@ -45,6 +45,10 @@
 		width: 3rem;
 		height: 3rem;
 		background-color: #fff;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+
 		&:not(:last-child) {
 			margin-right: 2rem;
 		}
