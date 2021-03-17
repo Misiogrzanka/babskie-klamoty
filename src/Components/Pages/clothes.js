@@ -1,7 +1,5 @@
 import React from 'react';
 
-function ClothesPage() {
+export const ClothesPage = () => {
 	return <div></div>;
-}
-
-export default ClothesPage;
+};
