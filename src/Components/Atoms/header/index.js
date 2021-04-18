@@ -1,1 +1,0 @@
-export {BrandImg} from "./brand-img"
